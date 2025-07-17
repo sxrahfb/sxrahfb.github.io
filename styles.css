@@ -131,7 +131,7 @@
 
 .btn {
 border-radius: 0%;
-}
+} 
 
 @media (max-width: 991.98px) {
   .nav-items {
@@ -265,7 +265,7 @@ margin-left: calc(50% - 50vw);
 
 /* CSS for section section:mission */
 .mission-section {
-  padding: 200px 0;
+  padding: 100px 0;
 
 }
 
@@ -385,7 +385,7 @@ margin-left: calc(50% - 50vw);
   grid-template-columns: minmax(auto, 441px) 1fr;
   gap: 100px;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .access-title-wrapper, .about-title-wrapper {
   position: relative;
@@ -648,6 +648,11 @@ padding-top: 50px;
   height: 220px;
   width: auto;
   margin-bottom: 30px;
+}
+.pricing-box-img2 {
+  height: 220px;
+    width: auto;
+  margin-bottom: 50px;
 }
 .pricing-card.featured .pricing-box-img {
   height: 256px;
@@ -1251,3 +1256,114 @@ padding-top: 50px;
     display: none !important;
   }
 }
+
+
+/* COUNTDOWN DIGITAL */
+.countdown-box {
+  font-family: 'Syne Mono', monospace;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #fff;
+  background: #111;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.countdown-box div {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 80px;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+}
+
+.countdown-box span {
+  font-size: 3rem;
+  display: block;
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc;
+}
+
+.countdown-box .label {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.d-hero-section {
+  padding: 80px 0;
+}
+.d-hero-container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+.d-hero-content {
+  flex: 1;
+}
+
+.d-hero-title {
+  font-size: 36px;
+  line-height: 46px;
+  margin: 0 0 10px;
+}
+.syne-bold { font-weight: 700; }
+.syne-regular { font-weight: 400; }
+.d-hero-subtitle {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-text-muted);
+  margin: 0 0 40px;
+}
+.d-hero-description {
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0 0 40px;
+  max-width: 705px;
+}
+
+.d-hero-btn {
+  width: 246px;
+}
+.d-hero-image-container {
+  flex-shrink: 0;
+  text-align: center;
+  margin-top: 100px;
+}
+.d-hero-image-frame {
+  background-color: #f3eddb;
+  width: 950px;
+  height: 687px;
+}
+.d-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.d-hero-image-caption {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-text-muted);
+  margin-top: 30px;
+}
+@media (max-width: 1600px) {
+  .d-hero-image-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .d-hero-container {
+    flex-direction: column;
+  }
+  .items-included {
+    flex-direction: column;
+  }
+  .items-subtitle-right {
+    margin-top: 20px;
+  }
+}
+
